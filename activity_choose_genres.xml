@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/genreListSelect"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minHeight="177dp"
+    tools:context=".MainActivity">
+
+    <CheckBox
+        android:id="@+id/checkBoxAction"
+        android:layout_width="286dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="26dp"
+        android:checked="false"
+        android:duplicateParentState="true"
+        android:text="@string/action"
+        app:layout_constraintBottom_toTopOf="@+id/checkBoxThriller"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Action" />
+
+    <CheckBox
+        android:id="@+id/checkBoxThriller"
+        android:layout_width="286dp"
+        android:layout_height="60dp"
+        android:text="@string/thriller"
+        app:layout_constraintBottom_toTopOf="@+id/checkBoxComedy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxAction"
+        tools:text="Thriller" />
+
+    <CheckBox
+        android:id="@+id/checkBoxComedy"
+        android:layout_width="286dp"
+        android:layout_height="60dp"
+        android:text="@string/comedy"
+        app:layout_constraintBottom_toTopOf="@+id/checkBoxHorror"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxThriller"
+        tools:text="Comedy" />
+
+    <CheckBox
+        android:id="@+id/checkBoxHorror"
+        android:layout_width="286dp"
+        android:layout_height="58dp"
+        android:text="@string/horror"
+        app:layout_constraintBottom_toTopOf="@+id/checkBoxRomance"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxComedy"
+        tools:text="Horror" />
+
+    <CheckBox
+        android:id="@+id/checkBoxRomance"
+        android:layout_width="286dp"
+        android:layout_height="60dp"
+        android:text="@string/romance"
+        app:layout_constraintBottom_toTopOf="@+id/checkBoxSciFi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxHorror"
+        tools:text="Romance" />
+
+    <CheckBox
+        android:id="@+id/checkBoxSciFi"
+        android:layout_width="286dp"
+        android:layout_height="60dp"
+        android:text="@string/sci_fi"
+        app:layout_constraintBottom_toTopOf="@+id/checkBoxAnimation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxRomance"
+        tools:text="Sci-Fi" />
+
+    <CheckBox
+        android:id="@+id/checkBoxAnimation"
+        android:layout_width="286dp"
+        android:layout_height="60dp"
+        android:text="@string/animation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxSciFi"
+        tools:text="Animation" />
+
+    <Button
+        android:id="@+id/showFilmsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="49dp"
+        android:layout_marginStart="207dp"
+        android:text="Start Binging"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxAnimation"
+        app:layout_constraintVertical_bias="0.0" />
+
+</android.support.constraint.ConstraintLayout>
